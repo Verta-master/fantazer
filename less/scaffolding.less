@@ -1,0 +1,52 @@
+body {
+  font-family: "Parangon 120C", "Arial", sans-serif;
+  font-size: 37px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: @text;
+  text-align: center;
+  background-color: @outer;
+  background-image: url(../img/bg-pics.png);
+  background-repeat: repeat-y;
+  background-position: center top;
+  background-size: contain;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Corinthia", "Arial", sans-serif;
+  color: @title;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+figure {
+  .reset();
+}
+
+ul {
+  .reset();
+  list-style-type: none;
+}
+
+button {
+  font-family: "Cheshirskiy Cat", "Arial", sans-serif;
+  cursor: pointer;
+}
+
