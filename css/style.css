@@ -458,8 +458,10 @@ button {
   background-position: center top 85px;
   background-size: contain;
 }
-.promo__btn {
+.promo__btn-wrap {
   margin-top: 70px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .header {
   width: 100%;
@@ -559,8 +561,13 @@ button {
 }
 .title-sub {
   font-size: 54px;
+  font-weight: bold;
   max-width: 1410px;
   margin: 0 auto;
+}
+.title-h2 {
+  font-size: 129px;
+  margin: 0;
 }
 .btn {
   width: 422px;
@@ -571,8 +578,182 @@ button {
   background-color: #f1b926;
   border: 2px solid #573129;
   border-radius: 10px;
+  position: relative;
+  z-index: 2;
 }
 .btn:hover,
 .btn:active {
   color: #6d3168;
+}
+.btn-wrap {
+  width: 422px;
+  position: relative;
+  z-index: 1;
+}
+.btn-wrap::before,
+.btn-wrap::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 243px;
+  height: 114px;
+  background-image: url(../img/shadow-left.png);
+  background-repeat: no-repeat;
+}
+.btn-wrap::before {
+  left: 0;
+}
+.btn-wrap::after {
+  right: 0;
+  transform: scalex(-1);
+}
+.info {
+  padding: 0 55px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+  -ms-flex-align: start;
+      align-items: flex-start;
+}
+.info__text {
+  width: 1160px;
+  padding-top: 100px;
+  font-weight: 700;
+  letter-spacing: 5px;
+}
+.info__img {
+  margin-top: -70px;
+}
+.features {
+  width: 100%;
+  background-color: #f8f7f1;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+}
+.features__list {
+  margin-top: 80px;
+  margin-bottom: 100px;
+  padding-left: 56px;
+  padding-right: 36px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+.features__item {
+  width: 443px;
+  height: 153px;
+  margin-bottom: 28px;
+  margin-right: 18px;
+  padding-left: 2px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  background-color: #f1b926;
+  border-radius: 30px;
+  position: relative;
+}
+.features__item:nth-child(4n) {
+  margin-right: 0;
+}
+.features__name {
+  width: 437px;
+  height: 147px;
+  padding-right: 146px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  overflow: hidden;
+  font-size: 22px;
+  font-weight: bold;
+  border: 2px dashed #573129;
+  border-radius: 30px;
+}
+.features__name span {
+  display: block;
+  font-family: "Cheshirskiy Cat", "Arial", sans-serif;
+  font-size: 26px;
+  letter-spacing: 5px;
+}
+.features__img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 146px;
+  height: 153px;
+  overflow: hidden;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  border-radius: 30px;
+  border: 2px dashed #573129;
+  background-color: #fff;
+}
+.features__img img {
+  display: block;
+}
+.review {
+  padding: 0 55px;
+  padding-bottom: 60px;
+  background-image: url(../img/house.png);
+  background-repeat: no-repeat;
+  background-position: right 70px top;
+  background-size: 441px 238px;
+}
+.review__wrap {
+  display: -ms-flexbox;
+  display: flex;
+}
+.review__field {
+  width: 1162px;
+  min-height: 355px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  background-color: #fcfbf8;
+  border-radius: 30px;
+}
+.review__area {
+  display: block;
+  width: 1130px;
+  min-height: 332px;
+  border-radius: 30px;
+  border: 2px dashed #573129;
+  background-color: #fcfbf8;
+}
+.review__btn {
+  width: 446px;
+  min-height: 78px;
+}
+.review__btn-wrap {
+  width: 446px;
+  margin-bottom: 70px;
+  margin-top: 45px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.review__title {
+  text-align: left;
+  padding-left: 300px;
+}
+.review__sub {
+  padding-right: 250px;
 }

@@ -47,7 +47,9 @@
       
       <h1 class="title-h1">Интересные детские праздники</h1>
       <p class="title-sub">Организация и проведение интерактивных развлекательных шоу программ для детей в Москве и Московской области</p>
-      <button type="button" class="btn promo__btn">Получить скидку</button>
+      <div class="btn-wrap promo__btn-wrap">
+        <button type="button" class="btn promo__btn">Получить скидку</button>
+      </div>
     </section>
     
     <section class="info">
@@ -69,7 +71,7 @@
           </figure>
         </li>
         <li class="features__item">
-          <p class="features__name"><span>Яркие костюмы и актёры,</span>любящие своё дело</p>
+          <p class="features__name"><span>Яркие костюмы<br>и актёры,</span>любящие своё дело</p>
           <figure class="features__img">
             <img src="img/icon-costume.png" alt="Яркие костюмы и актёры" width="92" height="144">
           </figure>
@@ -105,7 +107,7 @@
           </figure>
         </li>
         <li class="features__item">
-          <p class="features__name">Радостные и волнующие<span>Моменты</span></p>
+          <p class="features__name">Радостные и<br>волнующие<span>Моменты</span></p>
           <figure class="features__img">
             <img src="img/icon-photo.png" alt="Радостные и волнующие Моменты" width="132" height="81">
           </figure>
@@ -114,13 +116,17 @@
     </section>
     
     <section class="review">
-      <h2 class="title-h2">Отзывы</h2>
-      <p class="title-sub">счастливых родителей</p>
+      <h2 class="title-h2 review__title">Отзывы</h2>
+      <p class="title-sub review__sub">счастливых родителей</p>
       <div class="review__wrap">
         <img src="img/family.png" alt="Отзывы" class="review__img" width="604" height="522">
         <div class="review__block">
-          <button type="button" class="btn"></button>
-          <textarea name="review" id="review" class="review__area"></textarea>
+          <div class="btn-wrap review__btn-wrap">
+            <button type="button" class="btn review__btn">Оставить отзыв</button>
+          </div>
+          <div class="review__field">
+            <textarea name="review" id="review" class="review__area"></textarea>
+          </div>
         </div>
       </div>
     </section>
