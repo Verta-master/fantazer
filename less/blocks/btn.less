@@ -7,9 +7,37 @@
   background-color: @yellow;
   border: 2px solid @text;
   border-radius: 10px;
+  position: relative;
+  z-index: 2;
   
   &:hover,
   &:active {
     color: @violet;
+  }
+}
+
+.btn-wrap {
+  width: 422px;
+  position: relative;
+  z-index: 1;
+  
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 243px;
+    height: 114px;
+    background-image: url(../img/shadow-left.png);
+    background-repeat: no-repeat;
+  }
+  
+  &::before {
+    left: 0;
+  }
+  
+  &::after {
+    right: 0;
+    transform: scalex(-1);
   }
 }
