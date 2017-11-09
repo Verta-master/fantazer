@@ -11,7 +11,7 @@
   align-items: flex-start;
   background-image: url(../img/bg-footer.png);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center top;
 }
 
@@ -53,13 +53,13 @@
   
   &:hover,
   &:active {
-    color: @bg;
+    color: @yellow;
   }
 }
 
 .footer__wrap-contacts {
   padding-right: 20px;
-  padding-top: 23px;
+  padding-top: 20px;
 }
 
 .footer__mail,
@@ -74,12 +74,14 @@
 
 .footer__text--right {
   text-align: right;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .footer__block {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: flex-start;
 }
 
 .footer__contacts {
@@ -131,25 +133,26 @@
   height: 68px;
   margin-left: auto;
   margin-right: 77px;
+  margin-bottom: 40px;
   background-image: url(../img/logo-bg.png);
   background-repeat: no-repeat;
   position: relative;
   
   span {
     position: absolute;
-    top: 0;
-    right: 0;
-    font-size: 12px;
+    top: -2px;
+    right: -10px;
+    font-size: 15px;
   }
 }
 
 .footer__logo-name {
-  padding-left: 15px;
+  padding-left: 12px;
   padding-top: 3px;
   margin: 0;
   font-family: "Cheshirskiy Cat", "Arial", sans-serif;
   font-size: 50px;
-  letter-spacing: 7px;
+  letter-spacing: 6px;
   color: @violet;
   font-weight: bold;
 }

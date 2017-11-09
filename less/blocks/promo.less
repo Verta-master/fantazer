@@ -11,5 +11,20 @@
 .promo__btn-wrap {
   margin-top: 70px;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: 910px;
+}
+
+.promo__btn {
+  position: relative;
+  
+  &::after {
+    content: "";
+    position: absolute;
+    top: -100px;
+    left: 440px;
+    width: 655px;
+    height: 155px;
+    background-image: url(../img/arrow-left.png);
+    background-repeat: no-repeat;
+  }
 }
