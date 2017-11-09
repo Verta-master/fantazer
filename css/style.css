@@ -446,16 +446,45 @@ address {
 .promo {
   width: 100%;
   min-height: 1142px;
-  padding-top: 40px;
-  background-image: url(../img/bg-main.png);
+  padding-top: 85px;
+}
+.promo__figure {
+  overflow: hidden;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  position: relative;
+}
+.promo__mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.promo__title {
+  width: 100%;
+  position: absolute;
+  top: 160px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.promo__img {
+  height: 1059px;
+  max-width: none;
+}
+.promo__map {
+  width: 100%;
+  height: 1059px;
+  background-image: url(../img/map.jpg);
   background-repeat: no-repeat;
-  background-position: center top 85px;
-  background-size: contain;
+  background-position: center;
+  background-size: cover;
 }
 .promo__btn-wrap {
   margin-top: 70px;
-  margin-left: auto;
-  margin-right: 910px;
+  margin-left: 890px;
 }
 .promo__btn {
   position: relative;
@@ -471,7 +500,13 @@ address {
   background-repeat: no-repeat;
 }
 .header {
-  width: 100%;
+  width: 1920px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 20;
+  padding-top: 40px;
   padding-left: 55px;
   padding-right: 36px;
   display: -ms-flexbox;
@@ -574,7 +609,6 @@ address {
 .title-h1 {
   font-size: 160px;
   margin-bottom: 0;
-  margin-top: -80px;
   letter-spacing: 3px;
   padding-left: 60px;
 }
