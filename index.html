@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta  name="viewport" content="width=device-width,initial-scale=1">
   <title>Фантазер - Детские праздники</title>
+  <link rel="shortcut icon" href="img/favicon.png" type="image/png">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -125,7 +126,7 @@
             <button type="button" class="btn review__btn">Оставить отзыв</button>
           </div>
           <div class="review__field">
-            <textarea name="review" id="review" class="review__area"></textarea>
+            <p class="review__area"><span>Анна, мама двоих детей:</span>Текст отзыва</p>
           </div>
         </div>
       </div>
@@ -243,5 +244,72 @@
       </div>
     </footer>
   </div>
+  
+  <!-- Discount window -->
+  <div style="display: none;">
+    <div class="modal" id="modal-dicount">
+      <button type="button" class="modal__close arcticmodal-close">X</button>
+      <div class="modal__content">
+        <h2 class="modal__title">Заявка на скидку</h2>
+        <form action="#" method="post" class="modal__form">
+          <div class="modal__field">
+            <input type="text" name="name" id="name-discount" class="modal__input" required>
+            <label for="name-discount" class="modal__label">Имя:</label>
+          </div>
+          <div class="modal__field">
+            <input type="tel" name="phone" id="phone-discount" class="modal__input" required>
+            <label for="phone-discount" class="modal__label">Тел.:</label>
+          </div>
+          <div class="modal__field">
+            <input type="email" name="email" id="email-discount" class="modal__input modal__input--email" required>
+            <label for="email-discount" class="modal__label">E-mail:</label>
+          </div>
+          <button type="submit" class="btn modal__btn">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Review window -->
+  <div style="display: none;">
+    <div class="modal" id="modal-review">
+      <button type="button" class="modal__close arcticmodal-close">X</button>
+      <div class="modal__content">
+        <h2 class="modal__title">Отзывы</h2>
+        <form action="#" method="post" class="modal__form">
+          <div class="modal__field">
+            <input type="text" name="name" id="name-review" class="modal__input" required>
+            <label for="name-review" class="modal__label">Имя:</label>
+          </div>
+          <div class="modal__field modal__field--area">
+            <textarea name="text" id="text-review" class="modal__input modal__input--area" required></textarea>
+            <label for="text-review" class="modal__label">Текст:</label>
+          </div>
+          <div class="modal__field-check">
+            <input type="checkbox" name="robot" id="robot" class="modal__check" required>
+            <label for="robot" class="modal__label">Я не робот</label>
+          </div>
+          <button type="submit" class="btn modal__btn">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/jquery.arcticmodal-0.3.min.js"></script>
+  
+  <!-- Modal windows -->
+  <script>
+    $(".promo__btn").click(function(){
+      $(function(){
+        $("#modal-dicount").arcticmodal();
+      });
+    });
+    $(".review__btn").click(function(){
+      $(function(){
+        $("#modal-review").arcticmodal();
+      });
+    });
+  </script>
 </body>
 </html>

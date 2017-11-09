@@ -386,16 +386,6 @@ textarea {
   margin: 0;
   padding: 0;
 }
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
 body {
   font-family: "Parangon 120C", "Arial", sans-serif;
   font-size: 37px;
@@ -787,11 +777,19 @@ address {
   display: block;
   width: 1130px;
   height: 332px;
+  overflow-y: auto;
   padding: 20px;
+  margin: 0;
+  font-weight: bold;
+  text-align: left;
   border-radius: 30px;
   border: 2px dashed #573129;
   background-color: #fcfbf8;
-  outline: none;
+}
+.review__area span {
+  display: block;
+  color: #6d3168;
+  margin-bottom: 10px;
 }
 .review__btn {
   width: 446px;
@@ -1108,4 +1106,187 @@ address {
 }
 .social__item:last-child {
   margin-right: 0;
+}
+.arcticmodal-overlay,
+.arcticmodal-container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+}
+.arcticmodal-container {
+  overflow: auto;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-collapse: collapse;
+}
+*:first-child + html .arcticmodal-container {
+  height: 100%;
+}
+.arcticmodal-container_i {
+  height: 100%;
+  margin: 0 auto;
+}
+.arcticmodal-container_i2 {
+  padding: 24px;
+  margin: 0;
+  border: 0;
+  vertical-align: middle;
+}
+.arcticmodal-error {
+  padding: 20px;
+  border-radius: 10px;
+  background: #000;
+  color: #fff;
+}
+.arcticmodal-loading {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  background: #000 url(loading.gif) no-repeat 50% 50%;
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 564px;
+  padding: 17px 10px 45px 15px;
+  background-color: #f8f1db;
+  border-radius: 20px;
+  z-index: 20;
+}
+.modal__close {
+  position: absolute;
+  top: -35px;
+  right: 10px;
+  width: 63px;
+  height: 63px;
+  color: #fff;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 1;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  background-color: #d3598c;
+  outline: none;
+}
+.modal__title {
+  font-family: "Parangon 120C", "Arial", sans-serif;
+  color: #573129;
+  font-weight: bold;
+  font-size: 52px;
+  letter-spacing: 1px;
+  margin: 0;
+}
+.modal__label {
+  font-size: 50px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 48px;
+  transform: translateY(-50%);
+}
+.modal__form {
+  margin-top: 15px;
+}
+.modal__input {
+  width: 100%;
+  height: 66px;
+  padding-left: 150px;
+  padding-right: 20px;
+  color: #573129;
+  font-weight: bold;
+  background-color: #f8f7f1;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+}
+.modal__input--email {
+  padding-left: 200px;
+}
+.modal__input--area {
+  padding-left: 20px;
+  padding-top: 60px;
+  height: 296px;
+}
+.modal__field {
+  margin-bottom: 15px;
+  position: relative;
+}
+.modal__field::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.modal__field:first-child::before {
+  width: 27px;
+  height: 36px;
+  background-image: url(../img/icon-user.png);
+}
+.modal__field:nth-child(2)::before {
+  width: 40px;
+  height: 45px;
+  background-image: url(../img/phone.png);
+}
+.modal__field:nth-child(3)::before {
+  width: 33px;
+  height: 25px;
+  background-image: url(../img/mail-dark.png);
+}
+.modal__field--area::before {
+  top: 30px;
+  width: 38px;
+  height: 50px;
+  background-image: url(../img/pen.png) !important;
+}
+.modal__field--area .modal__label {
+  top: 30px;
+}
+.modal__btn {
+  margin-top: 65px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 270px;
+  height: 71px;
+  font-size: 45px;
+}
+.modal__field-check {
+  width: 100%;
+  height: 66px;
+  background-color: #f8f7f1;
+  border-radius: 20px;
+  position: relative;
+  text-align: left;
+}
+.modal__field-check .modal__label {
+  position: relative;
+  top: 0;
+  left: 0;
+  padding-left: 57px;
+  cursor: pointer;
+}
+.modal__field-check .modal__label::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  width: 38px;
+  height: 38px;
+  border: 2px solid #573129;
+  border-radius: 10px;
+}
+.modal__check {
+  display: none;
+}
+.modal__check:checked ~ .modal__label::before {
+  background-color: #573129;
 }
