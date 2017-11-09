@@ -414,6 +414,7 @@ h2,
 h3 {
   font-family: "Corinthia", "Arial", sans-serif;
   color: #d3598c;
+  font-weight: normal;
 }
 img {
   max-width: 100%;
@@ -464,7 +465,20 @@ address {
 .promo__btn-wrap {
   margin-top: 70px;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: 910px;
+}
+.promo__btn {
+  position: relative;
+}
+.promo__btn::after {
+  content: "";
+  position: absolute;
+  top: -100px;
+  left: 440px;
+  width: 655px;
+  height: 155px;
+  background-image: url(../img/arrow-left.png);
+  background-repeat: no-repeat;
 }
 .header {
   width: 100%;
@@ -486,23 +500,29 @@ address {
       align-items: flex-start;
 }
 .header__time {
-  padding-top: 20px;
+  padding-top: 15px;
+  margin-bottom: 5px;
   font-size: 21px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: left;
 }
 .header__link {
   display: block;
   font-size: 29px;
+  font-weight: bold;
   color: #573129;
+  letter-spacing: 1px;
 }
 .header__phone {
   position: relative;
   padding-left: 60px;
-  padding-right: 15px;
+  padding-right: 20px;
 }
 .header__phone::before {
   content: "";
   position: absolute;
-  top: 15px;
+  top: 18px;
   left: 5px;
   width: 43px;
   height: 59px;
@@ -515,7 +535,7 @@ address {
 .logo__name {
   position: absolute;
   top: 173px;
-  left: 47px;
+  left: 45px;
   margin: 0;
   font-family: "Cheshirskiy Cat", "Arial", sans-serif;
   font-size: 40px;
@@ -526,10 +546,12 @@ address {
 .logo__about {
   position: absolute;
   bottom: 55px;
-  left: 75px;
+  left: 78px;
   margin: 0;
-  font-size: 25px;
+  font-size: 20px;
   color: #562b24;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 .menu {
   min-width: 883px;
@@ -547,32 +569,37 @@ address {
       align-items: center;
 }
 .menu__link {
-  padding: 0 17px;
+  padding: 0 22px;
   font-family: "Cheshirskiy Cat", "Arial", sans-serif;
-  font-size: 30px;
+  font-size: 28px;
   font-weight: bold;
   line-height: 57px;
   color: #573129;
+  letter-spacing: 1px;
 }
 .menu__link:hover,
 .menu__link:active {
   color: #6d3168;
 }
 .title-h1 {
-  font-size: 155px;
-  font-weight: normal;
-  margin: 0;
+  font-size: 160px;
+  margin-bottom: 0;
+  margin-top: -80px;
+  letter-spacing: 3px;
+  padding-left: 60px;
 }
 .title-sub {
   font-size: 54px;
   font-weight: bold;
   max-width: 1410px;
   margin: 0 auto;
+  letter-spacing: 1px;
 }
 .title-h2 {
   font-size: 129px;
-  font-weight: normal;
+  line-height: 1;
   margin: 0;
+  letter-spacing: 3px;
 }
 .btn {
   width: 422px;
@@ -587,6 +614,7 @@ address {
   font-size: 41px;
   font-weight: bold;
   color: #573129;
+  letter-spacing: 1px;
   background-color: #f1b926;
   border: 2px solid #573129;
   border-radius: 10px;
@@ -621,6 +649,7 @@ address {
 }
 .info {
   padding: 0 55px;
+  padding-bottom: 85px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: end;
@@ -630,21 +659,27 @@ address {
 }
 .info__text {
   width: 1160px;
-  padding-top: 100px;
+  padding-top: 112px;
   font-weight: 700;
   letter-spacing: 5px;
+  line-height: 1.25;
+}
+.info__text p {
+  margin-top: 0;
+  margin-bottom: 42px;
 }
 .info__img {
-  margin-top: -70px;
+  margin-top: -80px;
 }
 .features {
   width: 100%;
+  padding-top: 25px;
+  padding-bottom: 75px;
   background-color: #f8f7f1;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
 }
 .features__list {
-  margin-top: 80px;
-  margin-bottom: 100px;
+  margin-top: 75px;
   padding-left: 56px;
   padding-right: 36px;
   display: -ms-flexbox;
@@ -721,15 +756,20 @@ address {
 }
 .review {
   padding: 0 55px;
+  padding-top: 70px;
   padding-bottom: 60px;
   background-image: url(../img/house.png);
   background-repeat: no-repeat;
-  background-position: right 70px top;
+  background-position: right 85px top 40px;
   background-size: 441px 238px;
 }
 .review__wrap {
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: start;
+      align-items: flex-start;
 }
 .review__field {
   width: 1162px;
@@ -760,26 +800,31 @@ address {
 .review__btn-wrap {
   width: 446px;
   margin-bottom: 70px;
-  margin-top: 45px;
+  margin-top: 40px;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: 385px;
 }
 .review__title {
   text-align: left;
   padding-left: 300px;
 }
 .review__sub {
-  padding-right: 250px;
+  padding-right: 200px;
+}
+.review__img {
+  margin-top: -20px;
 }
 .about {
   width: 100%;
   margin-bottom: 40px;
+  padding-top: 20px;
+  padding-bottom: 15px;
   background-color: #f8f7f1;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
 }
 .about__list {
   padding: 0 55px;
-  margin-top: 30px;
+  margin-top: 20px;
   padding-bottom: 40px;
   display: -ms-flexbox;
   display: flex;
@@ -793,10 +838,11 @@ address {
 }
 .about__item:first-child {
   width: 570px;
+  padding-left: 25px;
   text-align: left;
 }
 .about__item:first-child .about__text {
-  bottom: 0;
+  bottom: -10px;
   right: 0;
   text-align: center;
 }
@@ -806,20 +852,31 @@ address {
 }
 .about__item:nth-child(2) .about__text {
   top: 50%;
-  right: 0;
+  right: 30px;
   text-align: center;
+}
+.about__item:nth-child(2) .about__img {
+  margin-left: -10px;
+  margin-top: 15px;
 }
 .about__item:nth-child(3) {
   -ms-flex-item-align: end;
       align-self: flex-end;
+  padding-right: 50px;
 }
 .about__item:nth-child(3) .about__text {
-  top: -100px;
-  right: 0;
+  top: -55px;
+  right: 45px;
+}
+.about__item:nth-child(4) {
+  padding-right: 50px;
 }
 .about__item:nth-child(4) .about__text {
-  top: 60%;
-  right: 0;
+  top: 55%;
+  right: 40px;
+}
+.about__item:nth-child(4) .about__img {
+  margin-top: -40px;
 }
 .about__text {
   position: absolute;
@@ -829,8 +886,16 @@ address {
   color: #6d3168;
   font-weight: bold;
 }
+.about__title {
+  padding-left: 25px;
+}
+.about__sub {
+  padding-right: 520px;
+  padding-top: 15px;
+}
 .order__list {
   padding: 0 55px;
+  padding-top: 10px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
@@ -841,11 +906,24 @@ address {
 .order__item {
   width: 25%;
 }
+.order__item:first-child {
+  padding-right: 35px;
+}
 .order__item:first-child .order__text {
-  margin-top: 60px;
+  margin-top: 40px;
 }
 .order__item:nth-child(2) {
-  padding-top: 65px;
+  padding-top: 70px;
+}
+.order__item:nth-child(2) .order__text {
+  margin-bottom: 30px;
+}
+.order__item:nth-child(3) .order__img {
+  margin-left: 50px;
+}
+.order__item:nth-child(4) .order__img {
+  margin-top: -20px;
+  margin-bottom: 35px;
 }
 .order__text {
   margin: 0;
@@ -853,12 +931,18 @@ address {
   line-height: 1;
   color: #6d3168;
   font-weight: bold;
+  letter-spacing: 1px;
 }
 .order__btn-wrap {
   margin-left: auto;
   margin-right: auto;
   margin-top: -50px;
-  margin-bottom: 50px;
+  margin-bottom: 55px;
+}
+.order__title {
+  font-size: 58px;
+  padding-left: 55px;
+  letter-spacing: 2px;
 }
 .footer {
   width: 100%;
@@ -876,7 +960,7 @@ address {
       align-items: flex-start;
   background-image: url(../img/bg-footer.png);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center top;
 }
 .footer__list {
@@ -916,11 +1000,11 @@ address {
 }
 .footer__link:hover,
 .footer__link:active {
-  color: #f8f1db;
+  color: #f1b926;
 }
 .footer__wrap-contacts {
   padding-right: 20px;
-  padding-top: 23px;
+  padding-top: 20px;
 }
 .footer__mail,
 .footer__text {
@@ -933,14 +1017,16 @@ address {
 }
 .footer__text--right {
   text-align: right;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .footer__block {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  -ms-flex-align: end;
-      align-items: flex-end;
+  -ms-flex-align: start;
+      align-items: flex-start;
 }
 .footer__contacts {
   margin-top: 10px;
@@ -988,23 +1074,24 @@ address {
   height: 68px;
   margin-left: auto;
   margin-right: 77px;
+  margin-bottom: 40px;
   background-image: url(../img/logo-bg.png);
   background-repeat: no-repeat;
   position: relative;
 }
 .footer__logo span {
   position: absolute;
-  top: 0;
-  right: 0;
-  font-size: 12px;
+  top: -2px;
+  right: -10px;
+  font-size: 15px;
 }
 .footer__logo-name {
-  padding-left: 15px;
+  padding-left: 12px;
   padding-top: 3px;
   margin: 0;
   font-family: "Cheshirskiy Cat", "Arial", sans-serif;
   font-size: 50px;
-  letter-spacing: 7px;
+  letter-spacing: 6px;
   color: #6d3168;
   font-weight: bold;
 }
