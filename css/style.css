@@ -440,6 +440,7 @@ address {
 .wrapper {
   width: 1280px;
   margin: 0 auto;
+  position: relative;
   background-color: #f8f1db;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
 }
@@ -509,6 +510,10 @@ address {
   top: 0;
   left: 0;
 }
+.promo__mask--bottom {
+  bottom: 0;
+  top: auto;
+}
 .promo__title {
   width: 100%;
   position: absolute;
@@ -527,6 +532,9 @@ address {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+.promo__map iframe {
+  border: none;
 }
 .promo__btn-wrap {
   margin-top: 45px;
@@ -554,8 +562,7 @@ address {
   width: 1280px;
   position: absolute;
   top: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
   z-index: 20;
   padding-top: 27px;
   padding-left: 37px;
@@ -653,6 +660,7 @@ address {
   color: #573129;
   letter-spacing: 1.5px;
 }
+.menu__link--active,
 .menu__link:hover,
 .menu__link:active {
   color: #6d3168;
@@ -1050,6 +1058,7 @@ address {
   font-weight: bold;
   letter-spacing: 2px;
 }
+.footer__link--active,
 .footer__link:hover,
 .footer__link:active {
   color: #f1b926;
@@ -1122,7 +1131,12 @@ address {
   background-image: url(../img/mail.png);
   background-repeat: no-repeat;
 }
+.footer__mail:hover,
+.footer__mail:active {
+  text-decoration: underline;
+}
 .footer__logo {
+  display: block;
   width: 186px;
   height: 47px;
   margin-left: auto;
@@ -1345,4 +1359,32 @@ address {
 }
 .modal__check:checked ~ .modal__label::before {
   background-color: #573129;
+}
+.contacts {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.contacts__info {
+  margin: 0;
+  line-height: 39px;
+  letter-spacing: 1px;
+}
+.contacts__info a {
+  color: #573129;
+}
+.contacts__info a:hover,
+.contacts__info a:active {
+  text-decoration: underline;
+}
+.contacts__info--red {
+  margin-bottom: 35px;
+  margin-top: 25px;
+  color: #d3598c;
+}
+.contacts__info--red a {
+  color: #d3598c;
+}
+.contacts__info--red a:hover,
+.contacts__info--red a:active {
+  text-decoration: underline;
 }
