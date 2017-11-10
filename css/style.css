@@ -443,6 +443,52 @@ address {
   background-color: #f8f1db;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
 }
+.btn {
+  width: 282px;
+  height: 53px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  font-family: "Cheshirskiy Cat", "Arial", sans-serif;
+  font-size: 27px;
+  font-weight: bold;
+  color: #573129;
+  letter-spacing: 1px;
+  background-color: #f1b926;
+  border: 2px solid #573129;
+  border-radius: 6px;
+  position: relative;
+  z-index: 2;
+}
+.btn:hover,
+.btn:active {
+  color: #6d3168;
+}
+.btn-wrap {
+  width: 282px;
+  position: relative;
+  z-index: 1;
+}
+.btn-wrap::before,
+.btn-wrap::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 163px;
+  height: 77px;
+  background-image: url(../img/shadow-left.png);
+  background-repeat: no-repeat;
+}
+.btn-wrap::before {
+  left: 0;
+}
+.btn-wrap::after {
+  right: 0;
+  transform: scalex(-1);
+}
 .promo {
   width: 100%;
   min-height: 760px;
@@ -484,7 +530,12 @@ address {
 }
 .promo__btn-wrap {
   margin-top: 45px;
-  margin-left: 595px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 500px;
+}
+.promo__btn-wrap::after {
+  right: 220px;
 }
 .promo__btn {
   position: relative;
@@ -607,6 +658,9 @@ address {
   color: #6d3168;
 }
 .title-h1 {
+  width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
   font-size: 103px;
   margin-bottom: 0;
   letter-spacing: 3px;
@@ -615,7 +669,7 @@ address {
 .title-sub {
   font-size: 36px;
   font-weight: bold;
-  max-width: 930px;
+  width: 930px;
   margin: 0 auto;
   letter-spacing: 1px;
 }
@@ -630,52 +684,7 @@ address {
   position: fixed;
   right: 10px;
   bottom: 10px;
-}
-.btn {
-  width: 282px;
-  height: 53px;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
-  font-family: "Cheshirskiy Cat", "Arial", sans-serif;
-  font-size: 27px;
-  font-weight: bold;
-  color: #573129;
-  letter-spacing: 1px;
-  background-color: #f1b926;
-  border: 2px solid #573129;
-  border-radius: 6px;
-  position: relative;
-  z-index: 2;
-}
-.btn:hover,
-.btn:active {
-  color: #6d3168;
-}
-.btn-wrap {
-  width: 282px;
-  position: relative;
-  z-index: 1;
-}
-.btn-wrap::before,
-.btn-wrap::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  width: 163px;
-  height: 77px;
-  background-image: url(../img/shadow-left.png);
-  background-repeat: no-repeat;
-}
-.btn-wrap::before {
-  left: 0;
-}
-.btn-wrap::after {
-  right: 0;
-  transform: scalex(-1);
+  z-index: 20;
 }
 .info {
   padding: 0 45px;
