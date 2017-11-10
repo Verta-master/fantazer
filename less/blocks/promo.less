@@ -2,6 +2,10 @@
   width: 100%;
   min-height: 760px;
   padding-top: 55px;
+  
+  &--price {
+    min-height: 444px;
+  }
 }
 
 .promo__figure {
@@ -12,6 +16,14 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  
+  &--price {
+    height: 390px;
+    background-image: 
+      linear-gradient(to top, @bg 0%, @bg 5%, transparent 70%),
+      url(../img/bg-star.jpg);
+    background-repeat: no-repeat, repeat;
+  }
 }
 
 .promo__mask {
@@ -77,4 +89,8 @@
     background-image: url(../img/arrow-left.png);
     background-repeat: no-repeat;
   }
+}
+
+.promo__sub {
+  width: 1280px;
 }

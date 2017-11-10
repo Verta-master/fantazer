@@ -65,3 +65,39 @@
   padding-left: 55px;
   letter-spacing: 1px;
 }
+
+.order__info {
+  width: 1046px;
+  margin: 0 auto;
+  margin-top: 30px;
+  letter-spacing: 1px;
+  
+  a {
+    color: @text;
+    
+    &:hover,
+    &:active {
+      text-decoration: underline;
+    }
+  }
+}
+
+.order__link-wrap {
+  margin: 0 auto;
+  margin-top: 90px;
+  margin-bottom: 35px;
+}
+
+.order__link {
+  position: relative;
+  
+  &::after {
+    content: "";
+    position: absolute;
+    top: -100px;
+    right: -165px;
+    width: 216px;
+    height: 110px;
+    background-image: url(../img/arrow-down.png);
+  }
+}
