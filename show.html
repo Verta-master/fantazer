@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta  name="viewport" content="width=device-width,initial-scale=1">
-  <title>Фантазер - Детские праздники: Контакты</title>
+  <title>Фантазер - Детские праздники</title>
   <link rel="shortcut icon" href="img/favicon.png" type="image/png">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -26,7 +26,7 @@
         <nav class="menu">
           <ul class="menu__list">
             <li class="menu__item">
-              <a href="show.html" class="menu__link">Шоу программы</a>
+              <a class="menu__link menu__link--active">Шоу программы</a>
             </li>
             <li class="menu__item">
               <a href="portfolio.html" class="menu__link">Портфолио</a>
@@ -38,7 +38,7 @@
               <a href="price.html" class="menu__link">Цены</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link menu__link--active">Контакты</a>
+              <a href="contacts.html" class="menu__link">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -47,33 +47,61 @@
     
     <section class="promo">
       <figure class="promo__figure">
-        <div class="promo__map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9029.699742697037!2d37.516894383204125!3d55.5423853348451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414aac42f8cd2369%3A0x33d11a125652d86f!2sUlitsa+Admirala+Rudneva%2C+4%2C+Moskva%2C+Russia%2C+117041!5e0!3m2!1sen!2skz!4v1510323551806" width="1280" height="706" allowfullscreen></iframe>
+        <div class="swiper-container slider">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide slider__pic">
+              <img src="img/show.jpg" class="slider__img" alt="Шоу программы" width="1280" height="867">
+            </li>
+            <li class="swiper-slide slider__pic">
+              <img src="img/show.jpg" class="slider__img" alt="Шоу программы" width="1280" height="867">
+            </li>
+            <li class="swiper-slide slider__pic">
+              <img src="img/show.jpg" class="slider__img" alt="Шоу программы" width="1280" height="867">
+            </li>
+            <li class="swiper-slide slider__pic">
+              <img src="img/show.jpg" class="slider__img" alt="Шоу программы" width="1280" height="867">
+            </li>
+          </ul>
         </div>
+        <div class="swiper-pagination"></div>
         <img src="img/bg-mask-top.png" alt="ФантазеР" class="promo__mask" width="1280" height="106">
         <img src="img/bg-mask-bottom.png" alt="ФантазеР" class="promo__mask promo__mask--bottom" width="1280" height="132">
       </figure>
     </section>
     
-    <section class="contacts">
-      <h1 class="title-h2">Контакты</h1>
-      <address class="contacts__info">
-        Адрес: Москва, улица Адмирала Руднева, 4<br>
-        График работы: Пн.-Пт. с 10:00 до 20:00
-      </address>
-      <p class="contacts__info">
-        E-mail: <a href="mailto:info@сайт.ru">info@сайт.ru</a><br>
-        Сайт: <a href="www.сайт.ru">www.сайт.ru</a><br>
-        Тел.: <a href="Tel:+74993904103">+7 (499) 390 41 03</a>, <a href="Tel:+79030084798">+7 (903) 008 47 98</a><br>
-      </p>
-      <p class="contacts__info contacts__info--red">
-        Предложения о сотрудничестве отправлять на<br>
-        E-mail: <a href="mailto:info@сайт.ru">info@сайт.ru</a>
-      </p>
-      <p class="contacts__info">
-        Юридическая информация: ИП Спорыхин Р.Е., ОГРНИП 310774623100447, ИНН<br>
-        772773500343, Юр. адрес: г. Москва, 117628, ул. Грина, д. 28
-      </p>
+    <section class="show">
+      <div class="show__text">
+        <h1 class="title-h2 show__title">Аватар с планеты Пандора.</h1>
+        <p>Сказочный и нереальный мир племени Нави, жители которого обитают на планете Пандора, ждёт в гости всех детей для самого незабываемого путешествия. Юным, смелым искателям приключений предстоит спасти Землю от приближающейся опасности. Вместе с бесстрашными героями, перевоплотившимися в Аватаров, эта нелёгкая миссия будет выполнена.</p>
+        <p>Аватар и американский морпех вместе с детьми будут преодолевать все испытания, встречающиеся в их путешествии. Команда проберётся через дикий лес с недружелюбными обитателями, научится метко стрелять из лука, откроет секрет племени Нави и познакомится ближе с их необычными традициями. А семена дерева Эйвы покажут путь и откроют секрет спасения Земли.</p>
+        <p>Детская анимационная программа "Аватар" – увлекательный, интересный и незабываемый детский праздник. Аватар на детском празднике – событие для любознательных и смелых детей.</p>
+      </div>
+      <ul class="show__list">
+        <li class="show__item">
+          <div class="show__wrap">
+            <p class="show__bord">Продолжительность<br>1 час.</p>
+          </div>
+          <img src="img/clock.png" alt="Продолжительность" class="show__img" width="120" height="123">
+        </li>
+        <li class="show__item">
+          <img src="img/circus.png" alt="Количество аниматоров" class="show__img" width="163" height="211">
+          <div class="show__wrap">
+            <p class="show__bord">Количество аниматоров 2 актера</p>
+          </div>
+        </li>
+        <li class="show__item">
+          <div class="show__wrap">
+            <p class="show__bord">Возраст детей<br>6 - 12 лет</p>
+          </div>
+          <img src="img/family.png" alt="Возраст детей" class="show__img" width="124" height="102">
+        </li>
+        <li class="show__item">
+          <img src="img/money.png" alt="Стоимость" class="show__img" width="123" height="91">
+          <div class="show__wrap">
+            <p class="show__bord">Стоимость<br>9 000 руб.</p>
+          </div>
+        </li>
+      </ul>
     </section>
     
     <footer class="footer">
@@ -81,7 +109,7 @@
         <nav class="footer__menu">
           <ul class="footer__list">
             <li class="footer__item">
-              <a href="show.html" class="footer__link">Шоу программы</a>
+              <a class="footer__link">Шоу программы</a>
             </li>
             <li class="footer__item">
               <a href="portfolio.html" class="footer__link">Портфолио</a>
@@ -93,7 +121,7 @@
               <a href="price.html" class="footer__link">Цены</a>
             </li>
             <li class="footer__item">
-              <a class="footer__link footer__link--active">Контакты</a>
+              <a href="contacts.html" class="footer__link footer__link--active">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -146,6 +174,17 @@
   </a>
   
   <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/swiper.min.js"></script>
   <script src="js/script.js"></script>
+  
+  <!-- Slider -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: "auto",
+      loop: true,
+      pagination: '.swiper-pagination',
+      paginationClickable: true,
+    });
+  </script>
 </body>
 </html>
