@@ -51,6 +51,7 @@
   font-weight: bold;
   letter-spacing: 2px;
   
+  &--active,
   &:hover,
   &:active {
     color: @yellow;
@@ -127,9 +128,15 @@
     background-image: url(../img/mail.png);
     background-repeat: no-repeat;
   }
+  
+  &:hover,
+  &:active {
+    text-decoration: underline;
+  }
 }
 
 .footer__logo {
+  display: block;
   width: 186px;
   height: 47px;
   margin-left: auto;

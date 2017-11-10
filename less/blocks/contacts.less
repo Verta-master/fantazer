@@ -1,0 +1,34 @@
+.contacts {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.contacts__info {
+  margin: 0;
+  line-height: 39px;
+  letter-spacing: 1px;
+  
+  a {
+    color: @text;
+    
+    &:hover,
+    &:active {
+      text-decoration: underline;
+    }
+  }
+  
+  &--red {
+    margin-bottom: 35px;
+    margin-top: 25px;
+    color: @title;
+    
+    a {
+      color: @title;
+      
+      &:hover,
+      &:active {
+        text-decoration: underline;
+      }
+    }
+  }
+}
