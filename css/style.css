@@ -527,6 +527,9 @@ address {
 .promo--price {
   min-height: 444px;
 }
+.promo--portfolio {
+  min-height: 400px;
+}
 .promo__figure {
   width: 100%;
   height: 706px;
@@ -541,6 +544,11 @@ address {
 }
 .promo__figure--price {
   height: 390px;
+  background-image: linear-gradient(to top, #f8f1db 0%, #f8f1db 5%, transparent 70%), url(../img/bg-star.jpg);
+  background-repeat: no-repeat, repeat;
+}
+.promo__figure--portfolio {
+  height: 350px;
   background-image: linear-gradient(to top, #f8f1db 0%, #f8f1db 5%, transparent 70%), url(../img/bg-star.jpg);
   background-repeat: no-repeat, repeat;
 }
@@ -560,6 +568,9 @@ address {
   top: 115px;
   left: 50%;
   transform: translateX(-50%);
+}
+.promo__title--portfolio {
+  top: 125px;
 }
 .promo__img {
   display: block;
@@ -732,7 +743,7 @@ address {
 }
 .info__img {
   margin-top: -50px;
-  z-index: 10;
+  z-index: 20;
 }
 .features {
   width: 100%;
@@ -1528,14 +1539,13 @@ address {
 .swiper-button-prev,
 .swiper-button-next {
   position: absolute;
-  top: 45%;
-  width: 26px;
-  height: 72px;
-  margin-top: -22px;
+  top: 0;
+  width: 40px;
+  height: 274px;
   z-index: 10;
   cursor: pointer;
-  background-color: #fff;
-  background-size: 26px 41px;
+  background-color: #f8f1db;
+  background-size: 18px 44px;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -1547,34 +1557,34 @@ address {
 }
 .swiper-button-prev,
 .swiper-container-rtl .swiper-button-next {
-  background-image: url(../img/icon-arrow-next.svg);
+  background-image: url(../img/icon-arrow-next.png);
   transform: rotate(180deg);
   left: 0;
   right: auto;
 }
 .swiper-button-prev.swiper-button-black,
 .swiper-container-rtl .swiper-button-next.swiper-button-black {
-  background-image: url(../img/icon-arrow-next.svg);
+  background-image: url(../img/icon-arrow-next.png);
   transform: rotate(180deg);
 }
 .swiper-button-prev.swiper-button-white,
 .swiper-container-rtl .swiper-button-next.swiper-button-white {
-  background-image: url(../img/icon-arrow-next.svg);
+  background-image: url(../img/icon-arrow-next.png);
   transform: rotate(180deg);
 }
 .swiper-button-next,
 .swiper-container-rtl .swiper-button-prev {
-  background-image: url(../img/icon-arrow-next.svg);
+  background-image: url(../img/icon-arrow-next.png);
   right: 0;
   left: auto;
 }
 .swiper-button-next.swiper-button-black,
 .swiper-container-rtl .swiper-button-prev.swiper-button-black {
-  background-image: url(../img/icon-arrow-next.svg);
+  background-image: url(../img/icon-arrow-next.png);
 }
 .swiper-button-next.swiper-button-white,
 .swiper-container-rtl .swiper-button-prev.swiper-button-white {
-  background-image: url(../img/icon-arrow-next.svg);
+  background-image: url(../img/icon-arrow-next.png);
 }
 /* Pagination Styles */
 .swiper-pagination {
@@ -2088,11 +2098,11 @@ button.swiper-pagination-bullet {
   letter-spacing: 2px;
   font-size: 72px;
 }
-.swiper-pagination-bullets {
+.promo .swiper-pagination-bullets {
   bottom: 90px;
   left: 40px;
 }
-.swiper-pagination-bullet {
+.promo .swiper-pagination-bullet {
   width: 24px;
   height: 24px;
   margin: 0 1px;
@@ -2103,15 +2113,15 @@ button.swiper-pagination-bullet {
   opacity: 1;
   border: none;
 }
-.swiper-pagination-bullet-active {
+.promo .swiper-pagination-bullet-active {
   background-color: transparent;
   background-image: url(../img/slide-active.png);
 }
-.swiper-pagination {
+.promo .swiper-pagination {
   text-align: left;
   z-index: 20;
 }
-.slider__img {
+.promo .slider__img {
   display: block;
 }
 .price__title {
@@ -2153,4 +2163,59 @@ button.swiper-pagination-bullet {
 .price__item .price__name {
   background-color: #f1b926;
   border-radius: 20px 0 0 20px;
+}
+.portfolio {
+  padding-bottom: 58px;
+}
+.portfolio--bg {
+  background-color: #f8f7f1;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+  padding-top: 10px;
+  padding-bottom: 40px;
+  margin-bottom: 25px;
+}
+.portfolio:last-of-type {
+  margin-bottom: 35px;
+}
+.portfolio__next-2,
+.portfolio__prev-2,
+.portfolio__next-4,
+.portfolio__prev-4 {
+  background-color: #f8f7f1;
+}
+.portfolio__title {
+  font-family: "Parangon 120C", "Arial", sans-serif;
+  font-size: 42px;
+  text-align: left;
+  color: #573129;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding-left: 53px;
+  margin-top: 0;
+  margin-bottom: 22px;
+}
+.portfolio__slider-4,
+.portfolio__slider-3,
+.portfolio__slider-2,
+.portfolio__slider-1 {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.portfolio__slide {
+  width: 384px !important;
+  height: 270px;
+  overflow: hidden;
+  border-radius: 20px;
+  border: 2px dashed #573129;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+.portfolio__img {
+  display: block;
+  max-width: none;
+  height: 100%;
 }
