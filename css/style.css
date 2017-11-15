@@ -544,12 +544,12 @@ address {
 }
 .promo__figure--price {
   height: 390px;
-  background-image: linear-gradient(to top, #f8f1db 0%, #f8f1db 5%, transparent 70%), url(../img/bg-star.jpg);
+  background-image: linear-gradient(to top, #f8f1db 0%, #f8f1db 5%, rgba(255, 255, 255, 0) 70%), url(../img/bg-star.jpg);
   background-repeat: no-repeat, repeat;
 }
 .promo__figure--portfolio {
   height: 350px;
-  background-image: linear-gradient(to top, #f8f1db 0%, #f8f1db 5%, transparent 70%), url(../img/bg-star.jpg);
+  background-image: linear-gradient(to top, #f8f1db 0%, #f8f1db 5%, rgba(255, 255, 255, 0) 70%), url(../img/bg-star.jpg);
   background-repeat: no-repeat, repeat;
 }
 .promo__mask {
@@ -559,7 +559,7 @@ address {
   z-index: 15;
 }
 .promo__mask--bottom {
-  bottom: 0;
+  bottom: -1px;
   top: auto;
 }
 .promo__title {
@@ -875,6 +875,13 @@ address {
   display: block;
   color: #6d3168;
   margin-bottom: 10px;
+  font-size: 27px;
+}
+.review__area b {
+  display: block;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px dashed #573129;
 }
 .review__btn {
   width: 299px;
@@ -1290,8 +1297,9 @@ address {
   position: absolute;
   top: -35px;
   right: 10px;
-  width: 63px;
-  height: 63px;
+  width: 63px !important;
+  height: 63px !important;
+  text-align: center;
   color: #fff;
   font-size: 50px;
   font-weight: bold;
